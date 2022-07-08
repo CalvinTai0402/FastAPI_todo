@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[packages]
+alembic = "*"
+psycopg2-binary = "*"
+sqlmodel = "*"
+sqlalchemy = "==1.4.35"
+
+[packages.fastapi]
+extras = [ "all",]
+
+[packages.passlib]
+extras = [ "bcrypt",]
+
+[packages.python-jose]
+extras = [ "cryptography",]
+
+[packages.fastapi-jwt-auth]
+extras = [ "asymmetric",]
